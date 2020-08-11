@@ -8,5 +8,11 @@ resource "aws_vpc" "main" {
 
   tags = {
     Name = "Index"
+    Environment = "QA"
   }
+}
+
+
+output "vpc_cidr" {
+    value = "$(aws_vpc.main)"
 }
