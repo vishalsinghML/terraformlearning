@@ -8,11 +8,11 @@ resource "aws_vpc" "main" {
 
   tags = {
     Name = "Index"
-    Environment11 = "QA"
+    Environment = "QA"
   }
 }
 
 
 output "vpc_cidr" {
-    value = "${aws_vpc.main.cidr_block}"
+    value = "${aws_vpc.main.cidr_block}, ${aws_vpc.main.id}"
 }
