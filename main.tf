@@ -14,5 +14,5 @@ resource "aws_vpc" "main" {
 
 
 output "vpc_cidr" {
-    value = "${aws_vpc.main.cidr_block}, ${aws_vpc.main.id}, ${aws_vpc.main.tags}"
+    value = "${aws_vpc.main.cidr_block}, ${aws_vpc.main.id}, ${aws_vpc.main.owner_id}"
 }
