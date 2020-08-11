@@ -14,5 +14,5 @@ resource "aws_vpc" "main" {
 
 
 output "vpc_cidr" {
-    value = "$(aws_vpc.main)"
+    value = "$(aws_vpc.main.cidr_block)"
 }
