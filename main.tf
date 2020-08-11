@@ -8,7 +8,7 @@ resource "aws_vpc" "main" {
 
   tags = {
     Name = "Index"
-    Environment1 = "QA"
+    Environment11 = "QA"
   }
 }
 
