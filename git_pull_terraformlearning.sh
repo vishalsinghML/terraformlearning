@@ -1,5 +1,5 @@
 echo "++++++++PULLING THE CODE FROM SERVER"
-git pull origin master
+git pull
 git status
 git diff
 echo "++++++++ADD THE CHANGES"
