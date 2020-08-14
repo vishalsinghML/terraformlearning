@@ -18,7 +18,6 @@ resource "aws_vpc" "main" {
   tags = {
     Name = "Index"
     Environment = "QA"
-    jj = "pplnkk"
   }
 }
 
